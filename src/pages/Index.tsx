@@ -268,7 +268,7 @@ const Index = () => {
       <div className="bg-gradient-pink py-6">
         <div className="container text-center">
           <p className="text-white font-display font-bold text-lg md:text-xl">
-            🎟️ Encontre a Natural Bot na Fispal 2026 — 26 a 29 de Maio
+            🎟️ Venha nos visitar no stand: E106 no setor de tecnologias na Fispal 2026 — 26 a 29 de Maio
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Obrigado = () => {
                 Pronto!
               </h1>
               <p className="text-muted-foreground text-lg">
-                Em instantes você receberá seu <strong className="text-brand-dark">CÓDIGO VIP</strong> por WhatsApp.
+                Em instantes você receberá seu <strong className="text-brand-dark">CÓDIGO VIP</strong> por e-mail.
               </p>
             </div>
           </div>
