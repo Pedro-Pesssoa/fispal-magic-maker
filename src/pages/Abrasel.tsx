@@ -123,7 +123,7 @@ const Abrasel = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Data</p>
-                    <p className="font-bold text-lg">16 e 17 de Setembro de 2026</p>
+                    <p className="font-bold text-lg">15 e 16 de Setembro de 2026</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 text-brand-dark">
@@ -269,7 +269,7 @@ const Abrasel = () => {
       <div className="bg-gradient-pink py-6">
         <div className="container text-center">
           <p className="text-white font-display font-bold text-lg md:text-xl">
-            🎟️ Venha nos visitar no Salão Abrasel 2026 — 16 e 17 de Setembro, Bienal do Ibirapuera
+            🎟️ Venha nos visitar no Salão Abrasel 2026 — 15 e 16 de Setembro, Bienal do Ibirapuera
           </p>
         </div>
       </div>
