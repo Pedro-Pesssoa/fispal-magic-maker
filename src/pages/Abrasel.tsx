@@ -39,10 +39,8 @@ const Abrasel = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const WEBHOOK_URL =
-    "https://backend.fenil.com.br/webhook-forms/receive/a515386f803594db9d3259214f2724e045facc40fcb0c9ba49e7c2fa8c6539d5";
   const N8N_WEBHOOK_URL =
-    "https://n8n.fenil.com.br/webhook/a76baf2b-49d2-47c1-889d-f8f718affae3";
+    "https://n8n.fenil.com.br/webhook/84b0cad5-24cc-49ab-b59a-69d3183e139d";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,8 +60,11 @@ const Abrasel = () => {
         segmento: form.segmento,
         evento: "Salão Abrasel 2026",
       });
-      await fetch(WEBHOOK_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload });
-      fetch(N8N_WEBHOOK_URL, { method: "POST", mode: "no-cors", body: payload }).catch((err) => console.error("[n8n]", err));
+      await fetch(N8N_WEBHOOK_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: payload,
+      });
       navigate("/obrigado");
     } catch {
       toast.error("Ops! Erro ao enviar. Verifique sua conexão e tente novamente.");
