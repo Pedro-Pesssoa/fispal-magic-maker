@@ -65,6 +65,7 @@ const Abrasel = () => {
         mode: "no-cors",
         body: payload,
       });
+      (window as any).fbq?.("track", "Lead");
       navigate("/obrigado");
     } catch {
       toast.error("Ops! Erro ao enviar. Verifique sua conexão e tente novamente.");
